@@ -26,4 +26,4 @@ This repository contains a Kaggle notebook for the "House Prices - Advanced Regr
    - Evaluated model using cross-validation.
 
 4. **Submission:**
-   - Generated predictions for the test dataset and exported results to `submission.csv`.
+   - Generated predictions for the test dataset and achieve a score of 0.15873
