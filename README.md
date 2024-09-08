@@ -8,23 +8,25 @@ This repository contains a Kaggle notebook for the "House Prices - Advanced Regr
 ## Objectives
 
 - **Preprocess Data:** Handle missing values using various imputing strategies and scale data.
-- **Feature Selection:** Drop numerical columns with low correlation to the target and columns with more than 50% missing values.
-- **Model Training:** Train an XGBoost model (using numerical values for simplicity).
+- **Feature Selection:** Drop columns that provided little value to model.
+- **Model Training:** Train an XGBoost model with the most optimal hyperparameters
 - **Evaluation:** Assess model performance using Root Mean Squared Log Error (RMSLE).
 
 ## Process
 
-1. **Data Preparation:** 
-   - Dropped columns with low correlation to "SalePrice".
+1. **Data Preparation:**
+   - Visualized data using a heatmap and boxplots.
+   - Dropped columns with a low correlation to "SalePrice".
    - Removed columns with more than 50% missing data.
-   - Imputed missing values using various strategies.
+   - Imputed missing values using mode for categorical and median for numerical data.
 
-2. **Feature Engineering:**
+3. **Feature Engineering:**
+   - Applied ordinal encoding to ordinal features and one-hot encoding to nominal features
    - Scaled numerical features.
 
-3. **Modeling:**
-   - Trained XGBoost model for regression.
+4. **Modeling:**
+   - Trained XGBoost model with hyperparameter tuning.
    - Evaluated model using cross-validation.
 
-4. **Submission:**
-   - Generated predictions for the test dataset and achieve a score of 0.15873
+5. **Submission:**
+   - Generated predictions for the test dataset and ranked 1857th out of 4439.
